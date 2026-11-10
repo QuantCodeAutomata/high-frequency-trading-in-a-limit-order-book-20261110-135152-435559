@@ -123,9 +123,9 @@ the cause. Three further readings of equation 3.18 consistent with the
 paper's text were implemented on a reduced 1000-path slice and compared
 against the executed implementation at gamma=0.1 and gamma=0.5: (1) treating
 ask and bid fills as mutually exclusive within a time step, instead of
-independent Bernoulli trials (uncertainty noted in the experiment
-description) — profit at gamma=0.5 moved from 47.9 to 45.8, not closing the
-gap; (2) removing the clip at zero on the inventory-skewed quote distances
+independent Bernoulli trials (the paper's text does not state whether both
+sides can fill in the same step) — profit at gamma=0.5 moved from 47.9 to
+45.8, not closing the gap; (2) removing the clip at zero on the inventory-skewed quote distances
 from the mid-price (equations 3.11-3.12) before computing fill intensities —
 profit moved from 47.9 to 48.6, not closing the gap; (3) quoting the full
 spread `delta_a+delta_b` (equation 3.18) on each side instead of half the
@@ -176,7 +176,7 @@ above.
 
 ## Not reproduced
 
-There is nothing to report: all four selected experiments (exp1-exp4) were
+There is nothing to report: all four experiments (exp1-exp4) were
 executed at the paper's full configuration, and every table and figure they
 target (Figure 1, Tables 1-3, Figures 2-4) has a corresponding artifact and
 comparison above.

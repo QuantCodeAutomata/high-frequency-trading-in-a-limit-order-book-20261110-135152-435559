@@ -1,6 +1,6 @@
 # High-frequency trading in a limit order book
 
-Reproduction of selected experiments from Marco Avellaneda and Sasha Stoikov,
+Reproduction of four experiments from Marco Avellaneda and Sasha Stoikov,
 "High-frequency trading in a limit order book", Quantitative Finance,
 Volume 8, Number 3 (2008), pages 217-224 (working paper version cited by
 page numbers throughout this repository).
